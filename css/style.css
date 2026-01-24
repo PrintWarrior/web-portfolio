@@ -114,6 +114,74 @@ body {
   padding: 0 15px;
   font-size: 14px;
   color: white;
+  position: relative;
+  gap: 5px;
+}
+
+.skill-box span.html:hover {
+  background-color: rgba(255, 154, 0, 0.5);
+  box-shadow: 0 0 8px rgba(255, 154, 0, 1);
+}
+
+.skill-box span.css:hover {
+  background-color: rgba(0, 174, 255, 0.5);
+  box-shadow: 0 0 8px rgba(0, 174, 255, 1);
+}
+
+.skill-box span.js:hover {
+  background-color: rgba(255, 255, 0, 0.5);
+  box-shadow: 0 0 8px rgba(255, 255, 0, 1);
+}
+
+.skill-box span.php:hover {
+  background-color: rgba(110, 89, 243, 0.5);
+  box-shadow: 0 0 8px rgba(110, 89, 243, 1);
+}
+
+.skill-box span.mysql:hover {
+  background-color: rgba(255, 87, 34, 0.5);
+  box-shadow: 0 0 8px rgba(255, 87, 34, 1);
+}
+
+.skill-box span.boot:hover {
+  background-color: rgba(0, 125, 62, 0.5);
+  box-shadow: 0 0 8px rgba(0, 125, 62, 1);
+}
+
+.skill-box span.git:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+.skill-box span.vscode:hover {
+  background-color: rgba(0, 122, 204, 0.5);
+  box-shadow: 0 0 8px rgba(0, 122, 204, 1);
+}
+
+.skill-box span.figma:hover {
+  background-color: rgba(255, 0, 123, 0.5);
+  box-shadow: 0 0 8px rgba(255, 0, 123, 1);
+}
+
+.skill-box span:hover::after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.85);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 11px;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.skill-box span::after {
+  opacity: 0;
+  transition: opacity .2s ease;
 }
 
 .social-links {
