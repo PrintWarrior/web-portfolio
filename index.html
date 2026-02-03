@@ -1,136 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="img/background.jpg" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Ace Azcona</title>
-  </head>
-  <body>
-    <div class="FlexCard">
-      <div class="left-panel">
-        <div class="profile-img">
-          <img src="img/ao.png" alt="profile" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Portfolio</title>
+  <!-- Favicon / Tab Icon -->
+  <link rel="icon" href="img/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    
+  </style>
+</head>
+<body>
 
-        <div class="skills-container">
-          <div class="skill-category">
-            <p>Frontend</p>
-            <div class="skill-box">
-              <span
-                class="html"
-                data-info="The standard language for building webpages."
-                >HTML</span
-              >
-              <span class="css" data-info="Used to style and layout webpages."
-                >CSS</span
-              >
-              <span
-                class="js"
-                data-info="Adds interactivity and logic to webpages."
-                >JS</span
-              >
-            </div>
-          </div>
+  <!-- NAVBAR -->
+  <nav>
+    <!--<div class="logo">LOGO</div>-->
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-          <div class="skill-category">
-            <p>Backend</p>
-            <div class="skill-box">
-              <span
-                class="php"
-                data-info="A widely-used, open-source, server-side scripting language."
-                >PHP</span
-              >
-              <span
-                class="mysql"
-                data-info="An open-source, relational database management system."
-                >MYSQL</span
-              >
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <p>Framework</p>
-            <div class="skill-box">
-              <span
-                class="boot"
-                data-info="A pre-defined components that enable developers to create responsiveness ."
-                >BOOT</span
-              >
-            </div>
-          </div>
-
-          <div class="skill-category">
-            <p>Tool</p>
-            <div class="skill-box">
-              <span
-                class="git"
-                data-info="A version control and collaborative software development."
-                >GITHUB</span
-              >
-              <span
-                class="vscode"
-                data-info="A free powerful, cross-platform code editor developed by Microsoft."
-                >VS CODE</span
-              >
-              <span
-                class="figma"
-                data-info="A powerful design tool that allows users to create, share, and collaboration."
-                >FIGMA</span
-              >
-            </div>
-          </div>
-        </div>
-
-        <div class="social-links">
-          <a href="https://github.com/PrintWarrior" class="social-icon"
-            ><img src="img/github.png" alt="github"
-          /></a>
-          <a href="https://www.facebook.com/gk.aizad/" class="social-icon"
-            ><img src="img/facebook.png" alt="facebook"
-          /></a>
-          <!--<a href="#" class="social-icon">Tw</a>
-                <a href="#" class="social-icon">Ig</a> -->
-        </div>
-      </div>
-
-      <div class="right-panel">
-        <div class="name-section">
-          <div>
-            <span style="color: white">A </span
-            ><span style="color: black">c e</span>
-          </div>
-          <div>
-            <span style="color: black">A </span
-            ><span style="color: white">z c o n a</span>
-          </div>
-        </div>
-
-        <div class="bio-section">
-          <h3>
-            I'm an I.T college student, okay to learn about creating functional
-            and user-friendly web systems that makes everyday tasks simplier.
-          </h3>
-        </div>
-
-        <div class="projects-section">
-          <div class="projects-grid">
-            <div class="project-card">
-              <a href="https://moelci-2tangub-city.com" class="project-link">
-              <div class="project-thumb">
-                <img src="img/wk31r7z6.png" alt="Portfolio Website" />
-              </div>
-              <h4>MOELCI - II</h4>
-              <p>Tangub City Sub Office</p>
-            </div> </a>
-
-          </div>
-        </div>
-      </div>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <h1 class="bg-text">Developer</h1>
+    <div class="floating-image">
+      <img src="/img/profile.png" alt="Portrait" />
     </div>
-    <script src="js/stardrop.js"></script>
-    <script src="js/autotype.js"></script>
-    <!--<script src="js/underdevelopment.js"></script>-->
-  </body>
+  </section>
+
+  <!-- ABOUT
+  <section class="about" id="about">
+    <div class="content">
+      <h2>About Me</h2>
+      <p>
+        I’m a frontend developer focused on creating immersive,
+        visually striking interfaces. I combine modern CSS,
+        motion, and clean architecture to build memorable digital
+        experiences.
+      </p>
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>React</span>
+      <span>UI/UX</span>
+      <span>Framer Motion</span>
+    </div>
+  </section>
+
+  
+  <section class="projects" id="projects">
+    <h2>Selected Work</h2>
+    <div class="project">
+      <h3>Portfolio Website</h3>
+      <p>Modern animated portfolio with editorial layout.</p>
+    </div>
+    <div class="project">
+      <h3>Landing Page</h3>
+      <p>High-conversion hero section with smooth motion.</p>
+    </div>
+  </section>
+
+  
+  <section class="contact" id="contact">
+    <h2>Let’s Work Together</h2>
+    <p>Have a project in mind? Let’s build something great.</p>
+    <a href="#" class="btn">Get in Touch</a>
+  </section> -->
+
+</body>
 </html>
