@@ -301,6 +301,175 @@
       width: 0.5rem;
     }
 
+    /* Skills Section */
+    #skills {
+      background: linear-gradient(to bottom, transparent, #0B0202);
+      padding: 8rem 10vw;
+      scroll-margin-top: 100px;
+    }
+
+    #skills h2 {
+      font-size: 3rem;
+      color: #E7A33C;
+      margin-bottom: 3rem;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+    }
+
+    .skill-card {
+      background: rgba(242, 178, 74, 0.05);
+      border: 1px solid rgba(242, 178, 74, 0.2);
+      padding: 2rem;
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .skill-card:hover {
+      background: rgba(242, 178, 74, 0.1);
+      border-color: rgba(242, 178, 74, 0.4);
+      transform: translateY(-5px);
+    }
+
+    .skill-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(242, 178, 74, 0.2);
+      border-radius: 0.75rem;
+      flex-shrink: 0;
+    }
+
+    .skill-icon svg {
+      width: 32px;
+      height: 32px;
+      color: #F2B24A;
+    }
+
+    .skill-name {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .skill-percentage {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #F2B24A;
+      text-align: right;
+    }
+
+    .skill-bar-container {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+
+    .skill-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #E7A33C, #F2B24A);
+      border-radius: 10px;
+      transition: width 0.8s ease;
+    }
+
+    /* Contacts/Footer Section */
+    #contacts {
+      background: linear-gradient(to bottom, transparent, #0B0202);
+      padding: 8rem 10vw;
+      scroll-margin-top: 100px;
+      border-top: 1px solid rgba(242, 178, 74, 0.2);
+    }
+
+    #contacts h2 {
+      font-size: 3rem;
+      color: #E7A33C;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .contacts-container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .contact-description {
+      font-size: 1.125rem;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .social-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(242, 178, 74, 0.1);
+      border: 2px solid rgba(242, 178, 74, 0.3);
+      border-radius: 50%;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .social-icon:hover {
+      background: rgba(242, 178, 74, 0.25);
+      border-color: #F2B24A;
+      transform: translateY(-5px);
+    }
+
+    .social-icon svg {
+      width: 32px;
+      height: 32px;
+      color: #F2B24A;
+      transition: color 0.3s ease;
+    }
+
+    .social-icon:hover svg {
+      color: white;
+    }
+
+    .footer-info {
+      border-top: 1px solid rgba(242, 178, 74, 0.2);
+      padding-top: 3rem;
+      font-size: 0.95rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer-info p {
+      margin: 0.5rem 0;
+    }
+
+    .footer-info strong {
+      color: #F2B24A;
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       nav {
@@ -313,13 +482,25 @@
       }
 
       #about,
-      #projects {
+      #projects,
+      #skills,
+      #contacts {
         padding: 4rem 5vw;
       }
 
       #about h2,
-      #projects h2 {
+      #projects h2,
+      #skills h2,
+      #contacts h2 {
         font-size: 2rem;
+      }
+
+      .skills-container {
+        grid-template-columns: 1fr;
+      }
+
+      .social-links {
+        gap: 1.5rem;
       }
 
       .carousel-button {
