@@ -40,22 +40,22 @@
     const projects = [
       {
         title: 'Moelci - II Queue System',
-        image: '../img/moelci.png',
+        image: './img/moelci.png',
         link: 'https://moelci-2tangub-city.com/'
       },
       {
         title: 'Internship Application Portal',
-        image: '../img/intern.png',
+        image: './img/intern.png',
         link: 'https://internshipportal.nmsc.online/'
       },
       {
         title: '3D Web Portfolio',
-        image: '../img/3Dwebport.png',
+        image: './img/3Dwebport.png',
         link: 'https://printwarrior.github.io/web-portfolio3d/'
       },
       {
         title: 'Beauty Mart',
-        image: '../img/beauty.png',
+        image: './img/beauty.png',
         link: 'https://beautymart.nmsc.online/'
       }
     ];
