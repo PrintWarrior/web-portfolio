@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Web Portfolio</title>
-  <!-- Favicon / Tab Icon -->
-  <link rel="icon" href="img/icon.png" type="image/x-icon" />
-  <link rel="stylesheet" href="css/style.css" />
-  <style>
-    
-  </style>
+  <link rel="icon" href="/img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-  <!-- NAVBAR -->
+  <!-- Navigation Bar -->
   <nav>
-    <!--<div class="logo">LOGO</div>-->
     <ul>
       <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -25,59 +19,55 @@
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="hero">
-    <h1 class="bg-text">Developer</h1>
-    <div class="floating-image">
-      <img src="img/profile.png" alt="Portrait" />
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Developer</h1>
+    <div class="hero-image">
+      <img src="/img/profile.png" alt="Portrait" />
     </div>
   </section>
 
-  <!-- ABOUT
-  <section class="about" id="about">
-    <div class="content">
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-content">
       <h2>About Me</h2>
-      <p>
-        I’m a frontend developer focused on creating immersive,
-        visually striking interfaces. I combine modern CSS,
-        motion, and clean architecture to build memorable digital
-        experiences.
-      </p>
+      <p class="bio-section"></p>
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects-header">
+      <h2>Projects</h2>
+      <p>Here are some of my recent projects.</p>
+    </div>
 
-  <section class="skills" id="skills">
-    <h2>Skills</h2>
-    <div class="skill-grid">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>UI/UX</span>
-      <span>Framer Motion</span>
+    <!-- Carousel -->
+    <div class="carousel-container">
+      <div class="carousel-slider" id="carouselSlider">
+        <!-- Projects will be inserted here by JavaScript -->
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button class="carousel-button prev" id="prevBtn" aria-label="Previous project">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      <button class="carousel-button next" id="nextBtn" aria-label="Next project">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators" id="indicators">
+        <!-- Indicators will be inserted here by JavaScript -->
+      </div>
     </div>
   </section>
 
-  
-  <section class="projects" id="projects">
-    <h2>Selected Work</h2>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>Modern animated portfolio with editorial layout.</p>
-    </div>
-    <div class="project">
-      <h3>Landing Page</h3>
-      <p>High-conversion hero section with smooth motion.</p>
-    </div>
-  </section>
-
-  
-  <section class="contact" id="contact">
-    <h2>Let’s Work Together</h2>
-    <p>Have a project in mind? Let’s build something great.</p>
-    <a href="#" class="btn">Get in Touch</a>
-  </section> -->
-
+  <script src="js/main.js"></script>
+  <script src="js/stardrop.js"></script>
 </body>
 </html>
