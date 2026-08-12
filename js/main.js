@@ -157,7 +157,7 @@
 
     // ===== TYPING EFFECT FOR BIO =====
     const bioElement = document.querySelector('.bio-section');
-    const bioText = "Cheese, I'm Xavier a Freelance Full Stack Web Developer | UI/UX Figma Designer | Zapier Automation Knowledgeable  | DNS Admin at Cleons Digital";
+    const bioText = "Cheese, I'm Xavier a Freelance Full Stack Web Developer | UI/UX Figma Designer | Zapier Automation Knowledgeable  | DNS Admin at Cleons | Email Automation Specialist";
     function typeEffect() {
       let i = 0;
       bioElement.innerHTML = '';
